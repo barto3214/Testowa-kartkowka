@@ -1,0 +1,24 @@
+Statki
+2
+2
+100
+
+D&D
+10
+2
+3
+
+Carcassone
+7
+3
+5
+
+Wiedźmin Stary Świat
+5
+1
+4
+
+Talizman: Magia i Miecz
+4
+2
+1

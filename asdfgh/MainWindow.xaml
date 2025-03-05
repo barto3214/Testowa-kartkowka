@@ -1,0 +1,60 @@
+﻿<Window x:Class="asdfgh.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:asdfgh"
+        mc:Ignorable="d"
+        Title="Gry_planszowe" Height="450" Width="400">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="100"
+            Click="Button_Click_Left"
+            Background="Transparent" BorderBrush="Transparent">
+                <Image Source="/608269 (1).png" Height="70"/>
+            </Button>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="200">
+
+                <TextBlock>Nazwa gry</TextBlock>
+                <Label></Label>
+                <TextBlock x:Name="Nazwa"></TextBlock>
+                <Label></Label>
+                <Label></Label>
+                <TextBlock>Minimalna liczba graczy</TextBlock>
+                <Label></Label>
+                <TextBlock x:Name="Max_graczy">0</TextBlock>
+                <Label></Label>
+                <Label></Label>
+                <TextBlock>Maksymalna liczba graczy</TextBlock>
+                <Label></Label>
+                <TextBlock x:Name="Min_graczy">0</TextBlock>
+                <Label></Label>
+                <Label></Label>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>Liczba zagrań:</TextBlock>
+                    <TextBlock x:Name="liczba_zagran">0</TextBlock>
+                </StackPanel>
+                <Label></Label>
+                <Button Click="Inkrementation_Click">Zagrane</Button>
+                <Label></Label>
+                <Label></Label>
+                <StackPanel>
+                    <TextBlock>Komentarze</TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox HorizontalAlignment="Left" Width="120" x:Name="comment"></TextBox>
+                        <Label Width="45"/>
+                        <Button Click="add_comment_Click">Wyślij</Button>
+                    </StackPanel>
+                    <TextBlock x:Name="comments"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <Button Width="100"
+            Click="Button_Click_Right"
+            Background="Transparent"
+            BorderBrush="Transparent">
+                <Image Source="/608269.png" Height="70"/>
+            </Button>
+        </StackPanel>
+
+    </StackPanel>
+</Window>
